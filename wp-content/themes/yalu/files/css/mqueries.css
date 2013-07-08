@@ -1,0 +1,295 @@
+/* QUERIES FOR IPAD/TABLETPC */
+@media only screen and (max-width: 1024px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+/*---------------------------------------------- 
+GENERAL CLASSES
+------------------------------------------------*/
+#page-content { min-width: 640px; }
+.wrapper { width: 640px; }
+.main-content { width: 640px; float: none; }
+aside {	width: 640px; margin-bottom: 60px; float: none; margin-top: 60px; }
+
+
+/*---------------------------------------------- 
+NAVIGATION & MENU
+------------------------------------------------*/
+nav#main-nav { display: none; }
+a.open-responsive-nav { display: block; }
+
+
+/*---------------------------------------------- 
+ICONBOX
+------------------------------------------------*/
+.iconbox {  margin-right: 0px; }
+	
+.box-one-half  { width: 310px; }
+.box-one-third  { width: 100%; }
+.box-two-third  { width: 100%; }
+.box-one-fourth  { width: 100%; }
+
+.box-nonspaced.box-one-half  { width: 320px; }
+.box-nonspaced.box-one-third  { width: 213px; }
+.box-nonspaced.box-two-third  { width: 426px; }
+.box-nonspaced.box-one-fourth  { width: 320px; }
+
+
+/*---------------------------------------------- 
+SLIDER
+------------------------------------------------*/
+.banner-container { max-width: 640px !important; }
+.banner-container .banner	{ max-width:640px !important; }
+
+
+/*---------------------------------------------- 
+Blog
+------------------------------------------------*/
+.one-half .blog-latest-entry .blog-right { width: 230px; }
+	
+	
+/*---------------------------------------------- 
+PORTFOLIO
+------------------------------------------------*/
+.portfolio-entry { width: 310px; }
+.masonry-col-3 .masonry-item { width: 200px; }
+.masonry-col-2 .masonry-item { width: 310px; }
+
+.portfolio-media { width: 100%; float: none; }
+.portfolio-layout-fullwidth .portfolio-media { float: none; width: 100%; }
+
+.portfolio-content { width: 100%; float: none; }
+.portfolio-layout-fullwidth .portfolio-content { float: none; width: 100%; }
+
+.portfolio-details { float: left; width: 300px;	}
+.portfolio-layout-fullwidth .portfolio-details { width: 300px;	}
+
+.portfolio-description {  float: right; width: 300px; }
+.portfolio-layout-fullwidth .portfolio-description { width: 300px; }
+
+#leavecomment form .form-row.textbox { width: 640px !important; }
+#leavecomment form .form-row textarea { width: 630px !important; max-width: 630px !important; }
+
+
+/*---------------------------------------------- 
+COLUMNS GRID
+------------------------------------------------*/
+.one-full { width: 100%; }
+.one-half  { width: 310px; }
+.one-third { width: 200px; }
+.two-third { width: 420px; }
+.one-fourth { width: 640px; }
+.two-fourth { width: 640px; margin-right: 0px; }
+.three-fourth { width: 640px; margin-right: 0px; }
+.one-fifth { width: 640px; margin-right: 0px; }
+.two-fifth { width: 640px; margin-right: 0px; }
+.three-fifth { width: 640px; margin-right: 0px; }
+.four-fifth { width: 640px; margin-right: 0px; }
+
+
+/*	Highlight Field
+------------------------------------------------*/
+.highlight-content { float: left !important; width: 100%;}
+.highlight-button { float: left !important;  width: 100%; margin-top: 20px!important; }
+
+/*	Pricing Table
+------------------------------------------------*/	
+.col2 .price-col { width: 310px; }
+.col3 .price-col { width: 200px; }
+.col4 .price-col { width: 310px; }
+
+/* Flickr Widget & Dribble Widget
+------------------------------------------------*/
+.flickr-widget .flickr-list li, .dribbble-widget .dribbble-list li {width: 14.7%;margin: 0 1% 1% 0;}
+
+/*	Search Widget
+------------------------------------------------*/
+#searchform input[type="text"] {width: 586px !important;}
+
+
+/*---------------------------------------------- 
+Carousel
+------------------------------------------------*/
+.carousel_container ul li { width: 112px; height: 112px; margin: 0 20px 0 0; }
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 680px) {
+	
+/*---------------------------------------------- 
+GENERAL CLASSES
+------------------------------------------------*/
+#page-content { min-width: 300px; }
+.wrapper { width: 300px; }
+.main-content { width: 300px; float: none; }
+aside {	width: 300px; margin-bottom: 60px; float: none; margin-top: 60px; }
+
+
+/*---------------------------------------------- 
+TOP
+------------------------------------------------*/
+#top .top-info { width: 100%; text-align: center; float: none; }
+#top .top-right { width: 100%; float: none; }
+
+
+/*---------------------------------------------- 
+1. FOOTER
+------------------------------------------------*/
+footer .left-float, footer .right-float { float: none; text-align: center; }
+
+
+/*---------------------------------------------- 
+PAGET TITLE
+------------------------------------------------*/
+#page-title .title-name { width: 100%; }
+.breadcrumb { display: none; }
+
+
+/*---------------------------------------------- 
+Blog
+------------------------------------------------*/		
+.blog-right { width: 220px; }
+.one-half .blog-latest-entry .blog-right { width: 220px; }
+.blog-author {
+	margin-top: 20px;
+	padding: 20px;
+	background: #f5f5f5;
+	}
+
+.blog-author .author-image {
+	width: 100%;
+	text-align:center;
+	margin-bottom: 20px;
+	float: none;
+	}
+	
+.blog-author .author-bio {
+	width: 100%;
+	float: none;
+	}
+
+/*---------------------------------------------- 
+14. Comments
+------------------------------------------------*/
+#comments .comment .children { margin-left: 20px;  }
+
+/*---------------------------------------------- 
+Pagination
+------------------------------------------------*/	
+#single-pagination { float: right; margin-top: 20px; }
+
+/* Views & Likes
+---------------------------------------- */
+#views-likes { float: left; margin-top: 20px; }
+
+
+/*---------------------------------------------- 
+Leave comment
+------------------------------------------------*/
+#leavecomment form .form-row { margin-left: 0px;  margin-top: 20px;  float: none; width: 300px !important; }
+#leavecomment form .form-row input[type=text] { width: 290px !important; max-width: 290px !important; }
+#leavecomment form .form-row.textbox { float: none; width: 300px !important; }
+#leavecomment form .form-row textarea { width: 290px !important; max-width: 290px !important; }
+
+
+/*---------------------------------------------- 
+PORTFOLIO
+------------------------------------------------*/
+.portfolio-entry { width: 300px; }
+.masonry-col-3 .masonry-item { width: 300px; }
+.masonry-col-2 .masonry-item { width: 300px; }
+
+
+/*---------------------------------------------- 
+ICONBOX
+------------------------------------------------*/
+.box-one-half  { width: 300px; }
+.box-one-third  { width: 300px; }
+.box-two-third  { width: 300px; }
+.box-one-fourth  { width: 300px; }
+
+.box-nonspaced.box-one-half  { width: 300px; }
+.box-nonspaced.box-one-third  { width: 300px; }
+.box-nonspaced.box-two-third  { width: 300px; }
+.box-nonspaced.box-one-fourth  { width: 300px; }
+
+
+/*---------------------------------------------- 
+SLIDER
+------------------------------------------------*/
+.banner-container { max-width: 300px !important; }
+.banner-container .banner	{ max-width: 300px !important; }
+
+
+/*---------------------------------------------- 
+SHARE 
+------------------------------------------------*/
+.blog-share .sharetitle { float: none; width: 100%; }
+.blog-share .sharelinks { float: none; list-style: none; }
+
+
+/*---------------------------------------------- 
+COLUMNS GRID
+------------------------------------------------*/
+.column { margin-right: 0px; float: none; }
+
+.one-full { width: 100%; }
+.one-half  { width: 100%; }
+.one-third { width: 100%; }
+.two-third { width: 100%; }
+.one-fourth { width: 100%; }
+.two-fourth { width: 100%; margin-right: 0px; }
+.three-fourth { width: 100%; margin-right: 0px; }
+.one-fifth { width: 100%; margin-right: 0px; }
+.two-fifth { width: 100%; margin-right: 0px; }
+.three-fifth { width: 100%; margin-right: 0px; }
+.four-fifth { width: 100%; margin-right: 0px; }
+
+
+/*	Pricing Table
+------------------------------------------------*/	
+.col2 .price-col { width: 300px; }
+.col3 .price-col { width: 300px; }
+.col4 .price-col { width: 300px; }
+
+
+/*	Social Widget
+------------------------------------------------*/	
+.socialmedia-widget { width: 100%; padding: 0; text-align:center; float: none !important; }
+.socialmedia-widget li { float: none; display: inline-block; margin: 0 -4px -4px 0; border: none !important; }
+	
+
+/* Flickr Widget & Dribble Widget
+------------------------------------------------*/
+.flickr-widget .flickr-list li, .dribbble-widget .dribbble-list li {width: 29%;margin: 0 3% 3% 0;}
+
+
+/*	Search Widget
+------------------------------------------------*/
+#searchform input[type="text"] {width: 246px !important;}
+
+/*---------------------------------------------- 
+25. Not Found
+------------------------------------------------*/
+#notfound-404 h2 { font-size: 150px; line-height: 170px; }
+
+
+/*---------------------------------------------- 
+Carousel
+------------------------------------------------*/
+.carousel_container ul li { width: 140px; height: 140px; margin: 0 20px 0 0; }
+
+/*---------------------------------------------- 
+Slider
+------------------------------------------------*/
+.tp-leftarrow.default, .tp-rightarrow.default {	width:40px;	height:40px; }
+.tp-rightarrow.default { background-position: 0px -60px;	}
+.tp-leftarrow.default { background-position: -40px -60px;	}
+
+.flex-direction-nav li a {width: 40px; height: 40px; }
+.flex-direction-nav li .flex-next {background-position: 0px -60px; }
+.flex-direction-nav li .flex-prev {  background-position: -40px -60px; }
+
+}

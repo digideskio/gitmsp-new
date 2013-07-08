@@ -1,0 +1,231 @@
+/*---------------------------------------------- 
+Retina
+------------------------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	
+	form .checkfalse .falseicon {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	a.link-moreinfo {
+		background-image: url(../images/retina/arrowright-grey@2x.png);
+		-webkit-background-size: 11px 10px; 
+	   	-moz-background-size: 11px 10px; 
+	    -o-background-size: 11px 10px; 
+		background-size: 11px 10px; 
+	}
+	
+	.list-arrow > li {
+		background-image: url(../images/retina/arrowright-grey@2x.png);
+		-webkit-background-size: 11px 10px; 
+	   	-moz-background-size: 11px 10px; 
+	    -o-background-size: 11px 10px; 
+		background-size: 11px 10px; 
+	}
+	
+	blockquote {
+		background-image: url(../images/retina/quote-icon@2x.png);
+		-webkit-background-size: 18px 14px; 
+	   	-moz-background-size: 18px 14px; 
+	    -o-background-size: 18px 14px; 
+		background-size: 18px 14px; 
+	}
+	
+	a.open-responsive-nav {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.blog-format span { 
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.blog-views, .portfolio-views {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.blog-likes, .portfolio-likes {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	#single-pagination li a, #entries-pagination li a {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.box-color a.link-moreinfo {
+		background-image: url(../images/retina/arrowright-white@2x.png);
+		-webkit-background-size: 11px 10px; 
+	   	-moz-background-size: 11px 10px; 
+	    -o-background-size: 11px 10px; 
+		background-size: 11px 10px; 
+	}
+	
+	.toggle .toggle-title .toggle-icon span { 
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.testimonial .testimonial-main .testimonial-icon {
+		background-image: url(../images/retina/quote-icon@2x.png);
+		-webkit-background-size: 18px 14px; 
+	   	-moz-background-size: 18px 14px; 
+	    -o-background-size: 18px 14px; 
+		background-size: 18px 14px; 
+	}
+	
+	.alert .alert-icon span {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.team-social li a {
+		background-image: url(../images/retina/social-icons@2x.png);
+		-webkit-background-size: 640px 160px; 
+	   	-moz-background-size: 640px 160px; 
+	    -o-background-size: 640px 160px; 
+		background-size: 640px 160px;
+	}
+	
+	#searchform input[type="submit"] {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	footer #searchform input[type="submit"] {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.socialmedia-widget li a {
+		background-image: url(../images/retina/social-icons@2x.png);
+		-webkit-background-size: 640px 160px; 
+	   	-moz-background-size: 640px 160px; 
+	    -o-background-size: 640px 160px; 
+		background-size: 640px 160px;
+	}
+	
+	.widget ul.menu li {
+		background-image: url(../images/retina/arrowright-grey@2x.png);
+		-webkit-background-size: 11px 10px; 
+	   	-moz-background-size: 11px 10px; 
+	    -o-background-size: 11px 10px; 
+		background-size: 11px 10px; 
+	}
+	
+	.twitter-widget .tweet_list li {
+		background-image: url(../images/retina/tweet@2x.png);
+		-webkit-background-size: 15px 13px; 
+	   	-moz-background-size: 15px 13px; 
+	    -o-background-size: 15px 13px; 
+		background-size: 15px 13px; 
+	}
+	
+	#recentcomments li {
+		background-image: url(../images/retina/tweet@2x.png);
+		-webkit-background-size: 15px 13px; 
+	   	-moz-background-size: 15px 13px; 
+	    -o-background-size: 15px 13px; 
+		background-size: 15px 13px; 
+	}
+	
+	.imgoverlay a .overlayicon {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	
+	/* Flexslider */
+	.flex-direction-nav li .flex-next { 
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.flex-direction-nav li .flex-prev { 
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	
+	/* Elegant Carousel */
+	.carousel_next, .carousel_prev {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	
+	/* Fancybox */
+	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	.fancybox-close {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+	
+	
+	/* RS Slider */
+	.tp-leftarrow.default, .tp-rightarrow.default {
+		background-image: url(../images/retina/sprites@2x.png);
+		-webkit-background-size: 540px 160px; 
+	   	-moz-background-size: 540px 160px; 
+	    -o-background-size: 540px 160px; 
+		background-size: 540px 160px; 
+	}
+
+	
+}

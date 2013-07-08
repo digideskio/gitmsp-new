@@ -1,0 +1,2503 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Spab Rice <spabrice@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+#. Text in function
+#: lang-yalu/widget-dribbble.php:1
+msgid "A simple Dribbble Widget to show your Dribbbles."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-flickr.php:1
+msgid "A simple flickr Widget to show your flickr images."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-tags.php:1
+msgid "A simple tag Widget."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-sociallinks.php:1
+msgid "A widget that displays all Social links which have been activated."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-tweets.php:1
+msgid "A widget that displays your latest tweets."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "ATTENTION: This resets all views/likes to 0 for all portfolio items."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "ATTENTION: This resets all views/likes to 0 for all posts."
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/singlepost-blog.php:67
+msgid "About the Author"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Accordion"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate Fancybox for the gallery posts"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate Likes count"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate Social Links"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate and shows the views count for all posts."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate the  build-in Like feature for your blog posts"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate the  build-in Like feature for your projects"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate the Share button for the posts. (Facebook, Twitter, Google, Pinterest)."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Activate the pagination Next/Previous for the Post detail page"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Adapt Slides"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Add FIeld"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Add Image"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Add Images"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Add Item"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Add Skill"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Add Tab"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Add Video"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Add a 16px x 16px Png/Gif image that will represent your website's favicon."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Add a Custom Logo from your Media Library"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Add a custom logo for the Wordpress login screen."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Add images or embedded videos, then drag and drop to arrange them."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Add the gallery images, then drag and drop to arrange them."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Add your own custom blog excerpt length."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "After adding the Highlight Field you can use your custom Button style using the Button shortcode."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "After adding the Pricing Table you can use your custom Button style using the Button shortcode."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Alert Hide Option"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Alert Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Alert Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Alert Type/Color"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Alerts"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Align"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Align Caption"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Animation Duration"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Archive"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Audio"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Author Info"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Auto Start"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Back To Top"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Behance"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:225
+msgid "Behance:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Big"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Blog"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Blog Posts Comments"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Blue"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Body"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Body Font"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Body Font Line-Height"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Body Font Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Bold"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Bottom Center"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Bottom Left"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Bottom Right"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Branding"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Button Color"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Button Link"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Button Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Button Target"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Button Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Button URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Buttons"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-general-features.php:1
+msgid "By"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Caption"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Carousel"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/theme-admin.php:199
+#: lang-yalu/singlepost-portfolio.php:108
+msgid "Category"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/functions.php:1
+msgid "Category Menu (Portfolio)"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Center"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Center Center"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Choose"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Choose Gallery"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Choose a layout"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-dribbble.php:137
+#: lang-yalu/widget-flickr.php:138
+msgid "Choose a number of items (max = 30)"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-tweets.php:147
+msgid "Choose a number of tweets (max = 3)"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Choose the body font line-height."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Choose the body font size."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Choose the font family for all other elements like buttons, date, ...)  In the live preview it's the same than the heading font."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Choose the navigation font size."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Choose the portfolio category you want to show for this page"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Choose the slider you want to show for this page"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Choose your layout for the columns you want include."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Choose your style for Portfolio Single View"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Click here to cancel reply"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/singlepost-portfolio.php:105
+msgid "Client"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-general-features.php:1
+msgid "Close"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Color (Ex. '#000000')"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Column 1"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Column 2"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Column 3"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Column 4"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Column 5"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Column Layout"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Columns"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Comment"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/comments.php:26
+#: lang-yalu/shortcodes.php:1
+#: lang-yalu/loop-blog.php:55
+#: lang-yalu/theme-general-features.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Comments"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+#: lang-yalu/contact-form.php:1
+msgid "Confirm"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Contact Form"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Contact Settings"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Control Nav"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Copyright Left"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Copyright Right"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Count"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Crop Images"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Custom"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Custom CSS"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Custom Login Logo"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/singlepost-portfolio.php:102
+msgid "Date"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Default"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default - Colored"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default - Dark"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default - Dark Bordered"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default - Light"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default - Light Bordered"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default - White Bordered"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Default is 400.  Width is 100% of parent container."
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/singlepost-portfolio.php:76
+msgid "Description"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/singlepost-portfolio.php:81
+msgid "Details"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Deviantart"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:232
+msgid "Deviantart:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Direction Nav"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Disabled"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Display"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Display Content"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Display Gallery format"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Display the back to top button"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Display the portfolio filter. Please make sure to add a Category Menu (Portfolio)."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Do you want the slides to adapt automatically to the slider height/width?"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Do you want to show the breadcrumb?"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Do you want to show the post type icon? (Audio, Video, Gallery,...)."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Do youw ant to display the content of the editor below the slider?"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Dribbble"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-dribbble.php:135
+msgid "Dribbble Items"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-dribbble.php:129
+msgid "Dribbble Name"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:205
+msgid "Dribbble:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Email"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Embedded Video"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Enable or disable the read more button on blog entries."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Enable the fancybox for bigger view."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Enable the pagination between the portfolio items."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Enable the random display of the different slides"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Enable the share feature."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Enabled"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Enter a client name"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Enter a date (Ex. January 2013)"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Enter a subtitle for your Portfolio item"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Enter a url for the sign up button."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Enter a valid number. Leave Empty if youw ant to show all items. <b>Enter -1 for show all items.</b>"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Enter the different listing values seperated by a double '||' sign."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Enter the google map latitude & longitude using this tool:<br>http://itouchmap.com/latlong.html"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Enter the price with currency"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Enter the quote."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Enter the url to your image icon file"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Enter the url to your pin icon"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:159
+msgid "Enter your social profile links including \"http://\""
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Enter your subtitle for this page.  Leave it empty if you son't want do show any subtitle."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Entries"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/shortcodes.php:1
+#: lang-yalu/theme-admin.php:199
+#: lang-yalu/contact-form.php:1
+msgid "Error"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Excerpt length"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Extern Link"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Facebook"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Facebook Profile"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:171
+msgid "Facebook:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "False"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Fancybox"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Favicon"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Featured Image"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Fieldname / Label"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Fieltype"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Filter"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Flickr"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-flickr.php:129
+msgid "Flickr ID"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-flickr.php:136
+msgid "Flickr Items"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Footer"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:1
+msgid "Footer Center Left"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:1
+msgid "Footer Center Right"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:1
+msgid "Footer Left"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:1
+msgid "Footer Right"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Forrst"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:239
+msgid "Forrst:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Fullwidth"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Gallery"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Gallery Display"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Gallery Settings"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "General"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Google Map"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Google Map Infotext"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Google Map Latitude & Longitude"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Google Map Pin Icon"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:185
+msgid "Google Plus:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Google Profile"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Google map"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Google+"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Green"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "H4 is the default size which you've seen on the live preview."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Heading Font"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Headings"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Height"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Hide Pagination"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Hightlight Field"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Icon URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "IconBox"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "IconBox Layout"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "If you choose 'list' the gallery pictures will be displayed underneath instead of a slider"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Iframe Code"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Image"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Image URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Include the embedded iframe."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Infotext"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1626
+msgid "Insert"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Instagram"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:198
+msgid "Instagram:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Latest News"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Latitude & Longitude"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Layout"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/comments.php:39
+msgid "Leave a Comment"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Leave it empty if you don't want to add more info link"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Leave these fields empty if ou don't want to show the google map in fullwidth.  It will replace the pagetitle area."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Left"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Left side for copyright"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Light"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/theme-general-features.php:267
+msgid "Like it"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Link"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Link Name"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Link URL (more info)"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Link to the a file download or live project. Please use 'http://'"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Behance portfolio."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Deviantart works."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Dribbles."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Facebook site."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Flickr images."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Forrst site."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Google+ profile"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Instagram Gallery."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your LinkedIn profile."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Pins."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Thumblr."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Twitter profile."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Vimeo videos."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Link to your Youtube channel."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Link url"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:253
+msgid "Linked In:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "LinkedIn"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "LinkedIn Link"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "List"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Listing"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-general-features.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Load More"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Logo"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "M4V File URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "MP3 File URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Mail Adress"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Main Color"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Map ID"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Medias"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Medias / Gallery"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Medium"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+#: lang-yalu/popup.php:1
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Name Adittion"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Name for Link"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Navigation"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Navigation Font"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Navigation Font Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Navigation Font Transform"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Navigation Font Weight"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/taxonomy-portfolio_tags.php:37
+#: lang-yalu/index.php:35
+#: lang-yalu/template-portfolio.php:64
+#: lang-yalu/theme-general-features.php:1
+#: lang-yalu/taxonomy-portfolio_category.php:37
+msgid "Next"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "No"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "No Slider"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/index.php:30
+#: lang-yalu/template-portfolio.php:55
+msgid "No posts has been found!"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Normal"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Number of Posts"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Number of Projects"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-tweets.php:145
+msgid "Number of tweets"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "OGA/OGG File URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Open"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Or self hosted video.  Please leave these fields empty if you don't want to show an self hosted video."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Orange"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Page Comments"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Page not found"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Pagetitle"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Pagination"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Paste your Google analytics (or other) code here."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Percent Amount"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Pin Icon Url"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/theme-general-features.php:270
+msgid "Pin it"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Pinterest"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:192
+msgid "Pinterest:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Placing Caption"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/shortcodes.php:1
+msgid "Please check your entries"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Please check your entries!"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Please choose the main portfolio page which uses the portfolio template."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/comments.php:8
+msgid "Please do not load this page directly!"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Please enter a valid number"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Please enter the embedded iframe code which is provided by vimeo, youtube, ..."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Please make sure to have created/added a Gallery"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+#: lang-yalu/option-panel.php:1
+msgid "Portfolio"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Portfolio Categories"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Portfolio Comments"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Portfolio Grid"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Portfolio Infos"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Portfolio Page"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Portfolio Single View"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Post Comment"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Post Format"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Posts (Single)"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/taxonomy-portfolio_tags.php:37
+#: lang-yalu/index.php:35
+#: lang-yalu/template-portfolio.php:64
+#: lang-yalu/theme-general-features.php:1
+#: lang-yalu/taxonomy-portfolio_category.php:37
+msgid "Previous"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Price"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Pricing Layout"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Pricing Tables"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/functions.php:1
+msgid "Primary Menu"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Quote"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "RSS"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Randomize"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Read More Button"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Recent Works"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Recipient Email"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Red"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/single-portfolio.php:28
+#: lang-yalu/option-panel.php:1
+msgid "Related Projects"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Required field?"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Reset Likes"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Reset Views"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Reset Views/Likes"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Responsive Layout"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Rest"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Right"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Right side for copyright"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:260
+msgid "Rss:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-dribbble.php:1
+msgid "SR - Dribbbles"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-flickr.php:1
+msgid "SR - Flickr"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-tweets.php:1
+msgid "SR - Latest Tweets"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-sociallinks.php:1
+msgid "SR - Social Links"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/widget-tags.php:1
+msgid "SR - Tags"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Scale On Hover"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Search"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Select Slider"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Select a display option."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Select the column amount."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Select true if you want the slider to start automatically on page loading."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Select true to enable the control navigation."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Select true to enable the next/previous arrows."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Select true to enable the smooth transition between slides of different heights."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Select your color"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Set the animation speed, in milliseconds."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Set the interval time between the slides, in milliseconds."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Share"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/theme-general-features.php:269
+msgid "Share it"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/singlepost-portfolio.php:121
+msgid "Share this"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/singlepost-blog.php:56
+msgid "Share this post"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Author Name"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Show Breadcrumb"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Categories"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Category"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Client"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Date"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Show Featured Image"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Infos"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Media Caption Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Post Type"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show RSS link to the feed."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Tags"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show Views count"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Show related projects."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Shows the author description at the bottom of the post"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Shows the author of the post."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Shows the categories."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Shows the post Date."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Shows the related tags at the bottom of the post"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Sidebar"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:1
+msgid "Sidebar Blog"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:1
+msgid "Sidebar Page"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Single Pagination"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Skill Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Skills"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Slide"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Slider"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Slider Settings"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Slides"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Slideshow Speed"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Slugname"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Small"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Smooth Height"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Social"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Spaced"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Standard (Arrows)"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+#: lang-yalu/option-panel.php:1
+msgid "Style"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Styling"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Subject"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Submit"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Submit Button"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Subtitle"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Tab Name"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Tab Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Tabs"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Tag"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/singlepost-portfolio.php:111
+#: lang-yalu/option-panel.php:1
+msgid "Tags"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Team Layout"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Team Member"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Testimonial"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Textarea"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Textfield"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "The caption text you've entered for the media will be shown"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/comments.php:7
+msgid "The comments is password protected. Enter your password."
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/404.php:10
+msgid "The page you've searched for has not been found."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "The url to the M4V file"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "The url to the mp3 file"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "The url to the oga/ogg file"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "The url to the webmv file"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "This Text will be displayed on the Google Map"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This activates the responsive layout for mobile devices."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This activates the social links in the top right area. Configure Icons in Social Media."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This crops the portfolio thumbnails to the same sizes."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "This is important if you want to use more maps in the same page."
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/loop-blog.php:67
+msgid "This post is password protected."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This shows the Project information below the thumbnail picture."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This shows the categories of your Project."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This shows the client of your Project."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This shows the date of your Project."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "This shows the featured image as background image for the pagetitle area; Please select a featured image."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "This shows the total views of your Project."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "This will only apply if featured image is activated.  If you have a dark featured image, choose the light color."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "This will overwrite the pagetitle area"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Thumblr"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:246
+msgid "Thumblr:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Time indication"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Title"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Title Seperator"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Title color"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Title size"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-dribbble.php:123
+#: lang-yalu/widget-sociallinks.php:164
+#: lang-yalu/widget-tags.php:110
+#: lang-yalu/widget-flickr.php:123
+#: lang-yalu/widget-tweets.php:133
+msgid "Title:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "To view this protected post, enter the password below:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Toggle"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Toggle Open"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Toggle Size"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Toggle Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Toggle Title"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Top Bar"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Top Center"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Top Left"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Top Right"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Top bar info"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Tracking Code"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "True"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/theme-general-features.php:268
+msgid "Tweet it"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Twitter"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Twitter Profile"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-tweets.php:139
+msgid "Twitter Username"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:178
+msgid "Twitter:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Typography"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Upload as many slides you want, then drag and drop to arrange them."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Uppercase"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Use some basic HTML (b, i, span) to style your Text"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+#: lang-yalu/popup.php:1
+msgid "Video"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Video code"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/singlepost-portfolio.php:83
+#: lang-yalu/theme-general-features.php:1
+msgid "View all posts in %s"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Vimeo"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:212
+msgid "Vimeo:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/singlepost-portfolio.php:1
+msgid "Visit Live Project"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "WEBMV File URL"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Website"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "When clicking the portfolio item, the page will be redirected to this link."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "When empty background color is light grey."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Where should the sidebar float"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "White"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Write your own CSS-Code."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "Yellow"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-postmeta.php:1
+msgid "Yes"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-admin.php:199
+msgid "Your Comment has ben sent. Thank you."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/contact-form.php:1
+msgid "Your message has been sent. Thank You."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/contact-form.php:1
+msgid "Your message has not been sent"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "Youtube"
+msgstr ""
+
+#. Text in echo
+#: lang-yalu/widget-sociallinks.php:218
+msgid "Youtube:"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "_blank"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "_parent"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "_self"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/popup.php:1
+msgid "_top"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "for blog settings reset"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "for portfolio settings reset"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/theme-general-features.php:1
+msgid "loading ..."
+msgstr ""
+
+#. Text in function
+#: lang-yalu/shortcodes.php:1
+msgid "more Info"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/shortcodes.php:1
+#: lang-yalu/loop-blog.php:72
+msgid "read more"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "settings reset"
+msgstr ""
+
+#. Text in function
+#: lang-yalu/option-panel.php:1
+msgid "settings saved"
+msgstr ""
+

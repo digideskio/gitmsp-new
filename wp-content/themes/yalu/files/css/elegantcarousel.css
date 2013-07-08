@@ -1,0 +1,66 @@
+#carousel {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 60px;
+	}
+	.column #carousel:last-child { margin-bottom: 0; }
+	
+.carousel_container {
+	width: 100%; 
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	}
+	
+.carousel_container {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	}
+	
+.carousel_container ul  { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 2000px;  		/* will be overwritten by javascript */
+}
+	
+.carousel_container ul li {
+	width: 140px;
+	height: 140px;
+	display: block;
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0px;
+	position: relative;
+	z-index: 0;
+	}
+	
+	
+.carousel_next, .carousel_prev {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	display: block;
+	top: 50%;
+	margin-top: -20px;
+	text-indent: -9999px;
+	z-index: 20;
+	background: #333333 url(../images/sprites.png) 0px -60px  no-repeat;
+	}
+	
+.carousel_prev { 
+	left:-20px;
+	background-position: -40px -60px;
+	}
+.carousel_next { 
+	right:-20px;
+	background-position: 0px -60px;
+	}
+.carousel_next:hover, .carousel_prev:hover {
+	background-color: #1e7987;
+	}
+	
+.disable { display: none; }
