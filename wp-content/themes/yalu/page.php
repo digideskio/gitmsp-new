@@ -12,7 +12,6 @@ get_header();
 if (have_posts()) : while (have_posts()) : the_post(); 
 
 ?>
-                    
 		<?php the_content(); ?>
         <?php wp_link_pages('before=<p>&after=</p>&next_or_number=number&pagelink=page %'); ?>
          
@@ -25,5 +24,4 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 <?php endwhile; ?>
 <?php endif; ?>
-
 <?php get_footer(); ?>

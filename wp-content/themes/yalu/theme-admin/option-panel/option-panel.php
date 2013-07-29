@@ -99,7 +99,7 @@ $sr_options = array(
 					   "desc" => __("Use some basic HTML (b, i, span) to style your Text", 'sr_yalu_theme'),
 					   "id" => $sr_prefix."_topbar_info",
 					   "type" => "text",
-					   "default" => "Contact us: <span class=\"phone-highlight\">0123 456 789</span>"
+					   "default" => "Contact us: <span class=\"phone-highlight\">612 749 4804</span>"
 					  ),
 				
 				array( "label" => __("Activate Social Links", 'sr_yalu_theme'),
