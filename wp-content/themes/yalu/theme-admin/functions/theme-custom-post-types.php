@@ -24,7 +24,7 @@ function sr_portfolio_post_type(){
 			),
 		'public' => true,
 		'show_ui' => true,
-		'supports' => array('title', 'editor', 'thumbnail', 'comments'),
+		'supports' => array('title', 'editor', 'thumbnail', 'comments', 'page-attributes'),
 		'menu_icon' => get_stylesheet_directory_uri() . '/theme-admin/functions/images/portfolio.png',
 		'rewrite' => array(
 			'slug' => 'portfolio',

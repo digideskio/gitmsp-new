@@ -1101,6 +1101,7 @@ function sr_recentworks( $atts, $content = null )
 	$recent = new WP_Query(array(
 		'post_type' => array('portfolio'),
 		'posts_per_page'=> $number,
+		'orderby' => 'menu_order'
 	));
 	
 	$p = '';
