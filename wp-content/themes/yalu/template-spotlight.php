@@ -30,7 +30,7 @@ get_header();
                 ?>
             
                 <?php
-                    get_template_part( 'includes/loop', 'blog');
+                    get_template_part( 'includes/loop', 'spotlight');
                 ?>
                 
                 <?php sr_pagination(__('Previous', 'sr_yalu_theme'), __('Next', 'sr_yalu_theme')); ?>                
