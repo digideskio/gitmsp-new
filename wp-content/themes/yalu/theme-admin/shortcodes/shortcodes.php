@@ -1109,7 +1109,7 @@ function sr_recentworks( $atts, $content = null )
 		$externlink = get_post_meta(get_the_ID(), $sr_prefix.'_portfolio_externlink', true);
 		$subtitle = get_post_meta(get_the_ID(), $sr_prefix.'_portfolio_subtitle', true);
 		
-		if($externlink) { $link = '<a href="'.$externlink.'" target="_blank">'; } else { $link = '<a href="'.get_permalink().'">'; }
+		if($externlink) { $link = '<a href="'.$externlink.'">'; } else { $link = '<a href="'.get_permalink().'">'; }
 		if($subtitle) { $sub = '<p>'.$subtitle.'</p>'; } else { $sub = ''; }
 		
 		$p .= '
