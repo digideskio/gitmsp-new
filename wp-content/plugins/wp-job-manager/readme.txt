@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mike.jol
 Tags: job listing, job board, job, jobs, company
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.5
+Stable tag: 1.2.0
 
 Manage job listings from the WordPress admin panel, and allow users to post jobs directly to your site.
 
@@ -71,6 +71,36 @@ The manual installation method involves downloading the plugin and uploading it 
 6. Job listings in admin.
 
 == Changelog ==
+
+= 1.2.0 =
+* Support for featured job listings
+* Support for meta job duration
+* set_expirey when publishing jobs from admin manually
+* Update handler
+
+= 1.1.3 =
+* Corrected form field label
+* Added french translation by Remi Corson
+
+= 1.1.2 =
+* job_manager_get_dashboard_jobs_args filter
+* Better handling of submit job steps.
+* Option to store the slug of the submit job page - used by addons.
+* Use :input in JS to support multiple input types if customised.
+
+= 1.1.1 =
+* Improved accuracy of job search
+* Fixed category filter dropdown in admin
+
+= 1.1.0 =
+* Tweaked css clearfixes
+* Use built in antispambot for encoding email.
+* job_manager_job_filters_showing_jobs_links filter
+* IE8 Apply filters JS fix
+* Fix spanish locale
+* Fixed strict standards errors
+* Improve 2013 Styles
+* Addons page. Disabled usings add_filter( 'job_manager_show_addons_page', '__return_false' );
 
 = 1.0.5 =
 * Added function to get listings by certain criteria.

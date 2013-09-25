@@ -167,6 +167,18 @@ function is_position_filled( $post = null ) {
 }
 
 /**
+ * Return whether or not the position has been featured
+ *
+ * @param  object $post
+ * @return boolean
+ */
+function is_position_featured( $post = null ) {
+	$post = get_post( $post );
+
+	return $post->_featured ? true : false;
+}
+
+/**
  * the_job_permalink function.
  *
  * @access public
@@ -211,7 +223,7 @@ function get_the_job_application_method( $post = null ) {
 	if ( strstr( $apply, '@' ) && is_email( $apply ) ) {
 		$method->type      = 'email';
 		$method->raw_email = $apply;
-		$method->email     = wp_job_manager_encode_email( $apply );
+		$method->email     = antispambot( $apply );
 		$method->subject   = 'Job Application via "' . $post->post_title . '" listing on ' . home_url();
 	} else {
 		if ( strpos( $apply, 'http' ) !== 0 )
@@ -493,6 +505,9 @@ function get_job_listing_class( $class = '', $post_id = null ) {
 
 	if ( is_position_filled( $post ) )
 		$classes[] = 'job_position_filled';
+
+	if ( is_position_featured( $post ) )
+		$classes[] = 'job_position_featured';
 
 	return get_post_class( $classes, $post->ID );
 }

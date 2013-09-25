@@ -3,109 +3,246 @@ Contributors: DvanKooten
 Donate link: http://dannyvankooten.com/donate/
 Tags: mailchimp, newsletter, mailinglist, email, email list, form, widget form, sign-up form, subscribe form, comments, comment form, mailchimp widget, buddypress, multisite
 Requires at least: 3.1
-Tested up to: 3.6
-Stable tag: 0.8.1
+Tested up to: 3.6.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Thé ultimate MailChimp plugin! Includes a form shortcode, form widget and a comment form checkbox to grow your MailChimp list(s).
+The best MailChimp plugin to get more email subscribers. Easily add sign-up forms and sign-up checkboxes to your WordPress website.
 
 == Description ==
 
 = MailChimp for WordPress =
 
-This plugin provides you with various ways to grow your MailChimp list(s). Add a form to your posts or pages by using the `[mc4wp-form]` shortcode, use this shortcode in your text widgets to show a form in your widget areas or add a "Sign-me up to our newsletter" checkbox to your comment or registration forms. 
+Want to get more email subscribers for your MailChimp lists? This plugin will be a BIG help by showing sign-up forms and sign-up checkboxes on your WordPress website.
 
-Configuring is easy, all you need is your MailChimp API key!
+Easily build sign-up forms and then add them to your posts, pages and widget areas by using a simple shortcode `[mc4wp-form]`. 
 
-**Features:**
+Add "sign up to our newsletter" checkboxes to your comment form, registration form or other forms, making subscribing to your list(s) effortless for your visitors.  
 
-* Embed sign-up forms to your pages or posts by using a simple shortcode `[mc4wp-form]`
-* Add a MailChimp sign-up form to your widget areas by using the shortcode in a text widget
-* Adds a "sign-up to our newsletter" checkbox to your comment form or registration form
-* Sign-up requests from bots will be ignored (honeypot, Akismet, default spam protection).
-* Includes a simple way to design forms, add as many fields as you like.
+*This plugin has a premium version: [upgrade to MailChimp for WordPress Pro now >>](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/)*
+
+**Plugin Features**
+
+* Show sign-up forms in your posts, pages and widgets by using a simple shortcode `[mc4wp-form]`
+* Adds a "sign-up to our newsletter" checkbox to ANY form, including your comment and registration forms.
+* SPAM protection, no "fake" subscribers will be added to your lists.
+* Create and manage sign-up forms in an easy way. No field limit!
 * Uses the MailChimp API, blazingly fast and reliable.
-* Configuring is extremely easy, all you need is your MailChimp API key.
-* The checkbox is compatible with BuddyPress and MultiSite registration forms.
-* Compatible with Contact Form 7, use `[mc4wp_checkbox]` inside your CF7 forms.
-* Add the checkbox to ANY form you like and this plugin will take care of the rest.
+* Configuring is easy, all you need is your MailChimp API key.
+* Compatible with [BuddyPress](http://buddypress.org/) and WordPress MultiSite registration forms.
+* Compatible with [bbPress](http://bbpress.org/), add a newsletter checkbox to the new topic and new reply forms.
+* Compatible with [Contact Form 7](http://contactform7.com/), you can use `[mc4wp_checkbox]` inside your CF7 forms.
 
-**More info:**
+**Premium Features**
 
-* [MailChimp for WordPress](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/)
-* Check out more [WordPress plugins](http://dannyvankooten.com/wordpress-plugins/) by Danny van Kooten
-* You should follow [Danny on Twitter](http://twitter.com/DannyvanKooten) for lightning fast support and updates.
+* AJAX sign-up forms, so the page doesn't have to reload when clicking submit.
+* Multiple sign-up forms for multiple lists
+* Field presets for all your list's merge tags which makes it extremely easy to create sign-up forms.
+* Subscribers log, keep track of all sign-ups
+* Statistical charts, gain valuable insights when and how your visitors subscribed.
+* Built-in integration with [WooCommerce](http://www.woocommerce.com/) and [Easy Digital Downloads](https://easydigitaldownloads.com?ref=2123) for adding sign-up checkboxes to your checkout forms.
+* Premium support
 
-**MailChimp Sign-Up Form**
-The plugin comes packed with an easy to way to build a form just like you want it. You have the possibility to add as many fields as you like and customize labels, placeholders, initial values etc..
+[Upgrade to MailChimp for WordPress Pro now >>](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/)
 
-Use the `[mc4wp-form]` shortcode to use this form in your posts, pages or text widgets.
+= MailChimp Sign-Up Form =
+The plugin comes with an easy to way to build sign-up forms for your MailChimp lists. Add as many fields as you like and customize labels, placeholders, initial value's etc. in a simple way.
 
-**Sign-Up Checkbox**
-Commenters and subscribers are valuable visitors who are most likely interested to be on your mailinglist. This plugin makes it easy for them, all they have to do is check a single checkbox when commenting or registering on your website!
+Use the `[mc4wp-form]` shortcode to show a sign-up form in your posts, pages or text widgets.
 
-You can add this checkbox to ANY form you like, including Contact Form 7 forms. This plugin will then take care of subscribing the person who submitted the form.
+= "Sign-up to our newsletter?" Checkboxes =
+People who comment or register on your website are valuable visitors and most likely interested to be on your mailinglist as well. This plugin makes it easy for them to subscribe to your MailChimp lists, one mouse-click is all they need.
+
+You can add sign-up checkboxes to ANY form you like, including Contact Form 7 forms.
+
+= Simple but extremely flexible =
+Plugins should be flexible but simple. This plugin was developed with that in mind. Most settings are optional, making configuration of the plugin really simple. However, if you are more tech-savvy the plugin has plenty of customization options. 
+
 
 == Installation ==
 
 1. In your WordPress admin panel, go to Plugins > New Plugin, search for "MailChimp for WP" and click "Install now"
 1. Alternatively, download the plugin and upload the contents of mailchimp-for-wp.zip to your plugins directory, which usually is `/wp-content/plugins/`.
 1. Activate the plugin
-1. Fill in your MailChimp API key in the plugin's options.
+1. Set your MailChimp API key in the plugin settings.
 1. Select at least one list to subscribe visitors to.
-1. (Optional) Select where the checkbox should show up.
-1. (Optional) Design a form and include it in your posts, pages or text widgets.
+1. (Optional) Select to which forms the sign-up checkbox should be added.
+1. (Optional) Create a form and show it in your posts, pages or text widgets using the shortcode `[mc4wp-form]`.
+1. (Optional) If you like the plugin, upgrade to [MailChimp for WordPress Pro](dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/) for an even better plugin or donate a beer. Much appreciated!
 
 == Frequently Asked Questions ==
 
-= What does this plugin do? =
-This plugin gives you the possibility to easily create a sign-up form and show this form in various places on your website. Also, this plugin can add a checkbox to your comment form that makes it easy for commenters to subscribe to your MailChimp newsletter. All they have to do is check one checkbox and they will be added to your mailinglist(s).
+= Is there a premium version of this plugin? =
+Yes, there is and it is awesome. Pro features include:
 
-For a complete list of plugin features, take a look here: [MailChimp for WordPress](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/).
+1. (Multiple) AJAX Sign-up Forms (so the page doesn't reload after clicking the submit button)
+1. Statistical charts, learn when and how your visitors subscribed.
+1. Subscriber logging, keep track of everyone who subscribes and where they subscribed from.
+1. Easier form creation: presets for all your merge fields
+1. Sign-up checkbox integration with WooCommerce and Easy Digital Downloads
+1. Custom individual checkbox labels
+1. Premium support
 
-= Why does the checkbox not show up at my comment form? =
-Your theme probably does not support the necessary comment hook this plugin uses to add the checkbox to your comment form. You can manually place the checkbox by placing the following code snippet inside the form tags of your theme's comment form.
- `<?php if(function_exists('mc4wp_show_checkbox')) { mc4wp_show_checkbox(); }?>`
- Your theme folder can be found by browsing to `/wp-content/themes/your-theme-name/`.
+[Upgrade to MailChimp for WordPress Pro now >>](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/)
 
-= Where can I find my MailChimp API key? =
-[http://kb.mailchimp.com/article/where-can-i-find-my-api-key](http://kb.mailchimp.com/article/where-can-i-find-my-api-key)
+= The form shows a success message but subscribers are not added to my list(s)? =
+If the form shows a success message, it means the sign-up succeeded. 100%. MailChimp could have a slight delay sending the confirmation email though, just be patient.
+
+= The sign-up checkbox doesn't work? =
+The checkbox will fail silently because subscribing is not the main goal of the form that contains the checkbox. Please check if your list contains any required fields besides email and name fields.
+
+Optionally, use a sign-up form to help troubleshooting.
 
 = How can I style the sign-up form? =
-You can use the following CSS selectors to style the sign-up form to your likings. Just add your CSS rules to your theme's stylesheet, usually found in `/wp-content/themes/your-theme-name/style.css`.
+You can use CSS to style the sign-up form. Use the following CSS selectors.
 
 `
 form.mc4wp-form{ ... } /* the form element */
 form.mc4wp-form p { ... } /* form paragraphs */
 form.mc4wp-form label { ... } /* labels */
 form.mc4wp-form input { ... } /* input fields */
-form.mc4wp-form input[type=submit] { ... } /* submit button */
-form.mc4wp-form p.alert { ... } /* success & error messages */
-form.mc4wp-form p.success { ... } /* success message */
-form.mc4wp-form p.error { ... } /* error messages */
+form.mc4wp-form input[type="checkbox"] { ... } /* checkboxes */
+form.mc4wp-form input[type="submit"] { ... } /* submit button */
+form.mc4wp-form .mc4wp-alert { ... } /* success & error messages */
+form.mc4wp-form .mc4wp-success { ... } /* success message */
+form.mc4wp-form .mc4wp-error { ... } /* error messages */
 ` 
 
-= The shortcode [mc4wp-form] is not working. Why? =
-Make sure to go to **form settings** in the plugin settings screen. There you have to check a checkbox that says "load form functionality". This will make the plugin load the necessary code.
+Just add your CSS rules to the end of your theme stylesheet, **/wp-content/themes/your-theme-name/style.css**.
 
-= Can I add a checkbox to this form by plugin ...? =
-Yes, you can. Go to checkbox and tick the checkbox that says "show checkbox at other forms (manual)". Then, include ANY field with name attribute `mc4wp-do-subscribe` and the plugin will take care of the rest. 
+= Where can I find my MailChimp API key? =
+[http://kb.mailchimp.com/article/where-can-i-find-my-api-key](http://kb.mailchimp.com/article/where-can-i-find-my-api-key)
 
-Example: 
-`<input type="checkbox" name="mc4wp-do-subscribe" value="1" id="mc4wp-checkbox" /><label for="mc4wp-checkbox">Subscribe to our newsletter</label>`.
+= How to add a sign-up checkbox to my Contact Form 7 forms? =
+Use the following shortcode to render a sign-up checkbox in your CF7 forms. 
 
-Make sure your form contains an email field with any of the following names: 
-`email, e-mail, emailaddress, user_email, your-email, your_email, signup_email, emailadres` 
+`[mc4wp_checkbox "My custom label text"]`
 
-Note: when using Contact Form 7 you can use "[mc4wp_checkbox]" inside your CF7 form template.
+If you need more data for your merge fields, prefix the field name with `mc4wp-`.
+
+*Example CF7 template for MailChimp WEBSITE field*
+`
+[text* mc4wp-WEBSITE]
+`
+
+= Can I add a checkbox to a third-party form? =
+Yes, you can. Go to MailChimp for WP > Checkbox Settings and tick the "show checkbox at other forms (manual)" checkbox. Then, include a checkbox with name attribute `mc4wp-try-subscribe` and value `1` in your form.
+
+*Example HTML for checkbox in third-party form*
+`
+<input type="checkbox" name="mc4wp-try-subscribe" value="1" /><label>Subscribe to our newsletter?</label>
+`
+
+If you need to send more data for your list merge fields, prefix the name attribute with **mc4wp-**. The plugin will look for fields prefixed with `mc4wp-` and send the field values to MailChimp.
+
+*Example HTML code for MailChimp WEBSITE merge tag*
+`<input type="text" name="mc4wp-WEBSITE" /><label>Your website:</label>`
+
+= How do I add subscribers to certain interest groups? =
+Use the field wizard. Or, if you know more about HTML, the following snippet should get you started. *Replace `###` with your grouping ID or grouping name.*
+
+`
+<input type="hidden" name="GROUPINGS[###]" value="Groupname 1,Groupname 2,Groupname 3" />
+`
+Or, if you want to use checkboxes...
+
+`
+<input type="checkbox" name="GROUPINGS[###][]" value="Group 1" /><label>Group 1</label>
+<input type="checkbox" name="GROUPINGS[###][]" value="Group 2" /><label>Group 2</label>
+`
+
+= Why does the checkbox not show up at my comment form? =
+Your theme probably does not support the necessary comment hook this plugin uses to add the checkbox to your comment form. You can manually place the checkbox by placing the following code snippet inside the form tags of your theme's comment form.
+
+`<?php if(function_exists('mc4wp_show_checkbox')) { mc4wp_show_checkbox(); }?>`
+
+Your theme folder can be found by browsing to `/wp-content/themes/your-theme-name/`.
 
 == Screenshots ==
 
-1. The MC4WP options page.
-1. The MC4WP form options page.
+1. The MailChimp for WP settings pages.
+2. Add a sign-up checkbox to various places on your website.
+3. An example sign-up checkbox.
+4. An example sign-up form in my footer on dannyvankooten.com. More [MailChimp sign-up form examples](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/demo-sign-up-forms/) are available on my website.
+5. You can create multiple sign-up forms in [MailChimp for WordPress Pro](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/)
+6. Editing a form got a lot easier in the premium version.
+7. Gain valuable insights which method your visitors used to subscribe for any given time period using beautiful line charts. (Premium version only)
+
 
 == Changelog ==
+
+= 1.2 =
+* Improved: updated to MailChimp 2.0 API
+* Improved: now using custom light-weight API class using the WordPress HTTP API.
+* Improved: huge performance improvements on admin settings pages
+* Improved: usability and responsiveness of form settings page
+* Improved: clean-up
+
+= 1.1.4 =
+* Fixed: usage of textarea elements in the form mark-up for WP3.3+.
+
+= 1.1.3 =
+* Added: first and lastname to registration hook, works with Register Redux Plus for example.
+
+= 1.1.2 =
+* Fixed: field wizard initial value not being set in some browsers
+* Fixed: CF7 checkbox subscribing everyone regardless of checkbox setting
+* Added: bbPress compatibility, you can now add a sign-up checkbox to the new topic and new reply forms
+* Improved: various code and debug improvements
+* Improved: field wizard now wraps radio inputs and checkboxes in a label
+* Improved: Usability when using sign-up checkbox with Contact Form 7
+* Removed: form usage option
+
+= 1.1.1 =
+* Fixed warning for BuddyPress sites
+
+= 1.1 =
+* Fixed: spam comments not being filtered
+* Fixed: Automatic splitting of NAME into FNAME and LNAME
+* Added: HTML 5 url, tel and date fields to field wizard
+* Added: Form variables for usage inside form mark-up.
+* Improved: default form CSS
+* Improved: Contact Form 7 integration
+
+= 1.0.3 =
+* Added HTML quicktags to form markup textarea.
+* Added option to set custom label when using Contact Form 7 shortcode `[mc4wp_checkbox "Your checkbox label"]`
+* Added HTML comments
+* Added upgrade link to plugins overview
+* Improved compatibility with third-party plugins when using checkbox, smarter e-mail field guessing
+* Improved: easier copying of the form shortcode from form settings pages
+* Added: uninstall function
+
+= 1.0.2 =
+* Improved code, less memory usage
+* Added `mc4wp_show_form()` function for usage inside template files
+
+= 1.0.1 =
+* Changed: format for groups is now somewhat easier. Refer to the FAQ and update your form mark-up please. (Backwards compatibility included)
+* Added: group preset to form field wizard for hidden fields, checkboxes and radio inputs.
+* Added: radio inputs to field wizard
+* Improved: the field wizard will now add labels after the checkbox and radio input elements.
+* Fixed: regular error messages not being shown in some cases.
+
+= 1.0 =
+* Added support for group checkboxes
+* Added support for paragraph elements in error and success messages, the messages are now wrapped in `<div>` instead. Update your custom CSS rules
+* Added some translation filters for qTranslate and WPML compatibility.
+
+= 0.8.3 =
+* Added: Guess first and last name when only using full name field.
+* Added: Links to [MailChimp for WordPress Pro](http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/)
+* Fixed: Bug where options could not be saved after adding specific HTML tags to the form mark-up.
+
+= 0.8.2 =
+* Improved: Namespaced form CSS classes
+* Improved: Improved error messages
+* Improved: It is now easier to add fields to your form mark-up by using the wizard. You can choose presets etc.
+* Improved: All field names that are of importance for MailChimp should now be uppercased (backwards compatibility is included)
+* Improved: Fields named added through the wizard are now validated and sanitized
+* Improved: Added caching to the backend which makes it way faster
+* Improved: Various usability improvements
 
 = 0.8.1 =
 * Fixed: typo in form success message
@@ -119,7 +256,7 @@ Note: when using Contact Form 7 you can use "[mc4wp_checkbox]" inside your CF7 f
 * Improved: Code, removed unnecessary code, only load classes when not existing yet, etc.
 * Improved: hooked into user_register to allow third-party registration form plugins.
 * Added: Shortcode for usage inside Contact Form 7 form templates `[mc4wp_checkbox]`
-* Added: Catch-all, hook into ANY form using ANY input field with name attribute `mc4wp-do-subscribe` and value `1`.
+* Added: Catch-all, hook into ANY form using ANY input field with name attribute `mc4wp-try-subscribe` and value `1`.
 * Fixed: Subscribe from Multisite sign-up
 * Fixed: 404 page when no e-mail given.
 
@@ -181,3 +318,8 @@ Note: when using Contact Form 7 you can use "[mc4wp_checkbox]" inside your CF7 f
 
 = 0.1 =
 * BETA release
+
+== Upgrade Notice ==
+
+= 1.1.1 =
+Bugfix for BuddyPress sites

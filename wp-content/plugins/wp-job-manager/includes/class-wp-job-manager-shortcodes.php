@@ -127,7 +127,7 @@ class WP_Job_Manager_Shortcodes {
 		}
 
 		// ....If not show the job dashboard
-		$args = array(
+		$args = apply_filters( 'job_manager_get_dashboard_jobs_args', array(
 			'post_type'           => 'job_listing',
 			'post_status'         => array( 'publish', 'expired', 'pending' ),
 			'ignore_sticky_posts' => 1,
@@ -135,7 +135,7 @@ class WP_Job_Manager_Shortcodes {
 			'orderby'             => 'date',
 			'order'               => 'desc',
 			'author'              => get_current_user_id()
-		);
+		) );
 
 		$jobs = get_posts( $args );
 
@@ -162,8 +162,8 @@ class WP_Job_Manager_Shortcodes {
 
 		extract( $atts = shortcode_atts( apply_filters( 'job_manager_output_jobs_defaults', array(
 			'per_page'        => get_option( 'job_manager_per_page' ),
-			'orderby'         => 'date',
-			'order'           => 'desc',
+			'orderby'         => 'featured',
+			'order'           => 'DESC',
 			'show_filters'    => true,
 			'show_categories' => get_option( 'job_manager_enable_categories' ),
 			'categories'      => ''
