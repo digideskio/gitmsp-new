@@ -215,6 +215,8 @@ class MC4WP_Lite_Checkbox
 		if(!isset($_POST['mc4wp-do-subscribe']) || !$_POST['mc4wp-do-subscribe']) { return false; }
 		
 		$_POST['mc4wp-try-subscribe'] = 1;
+		unset($_POST['mc4wp-do-subscribe']);
+
 		return $this->subscribe_from_whatever();
 	}
 	/* End Contact Form 7 functions */
@@ -239,9 +241,9 @@ class MC4WP_Lite_Checkbox
 			} elseif(in_array($key, array('name', 'your-name', 'NAME', 'username', 'fullname'))) {
 				// find name field
 				$merge_vars['NAME'] = $value;
-			} elseif(substr($key, 0, 5) == 'mc4wp-') {
+			} elseif(strtolower(substr($key, 0, 6)) == 'mc4wp-') {
 				// find extra fields which should be sent to MailChimp
-				$key = strtoupper(substr($key, 5));
+				$key = strtoupper(substr($key, 6));
 
 				if(!isset($merge_vars[$key])) {
 					$merge_vars[$key] = $value;
@@ -325,8 +327,23 @@ class MC4WP_Lite_Checkbox
 		foreach($lists as $list) {
 			$result = $api->subscribe($list, $email, $merge_vars, 'html', $opts['double_optin']);
 		}
+		
+		// check if result succeeded, show debug message to administrators
+		if($result !== true && $api->has_error() && current_user_can('manage_options') && !defined("DOING_AJAX")) 
+		{
+			wp_die("
+					<h3>MailChimp for WP - Error</h3>
+					<p>The MailChimp server returned the following error message as a response to our sign-up request:</p>
+					<pre>" . $api->get_error_message() . "</pre>
+					<p>This is the data that was sent to MailChimp: </p>
+					<strong>Email</strong>
+					<pre>{$email}</pre>
+					<strong>Merge variables</strong>
+					<pre>" . print_r($merge_vars, true) . "</pre>
+					<p style=\"font-style:italic; font-size:12px; \">This message is only visible to administrators for debugging purposes.</p>
+					", "Error - MailChimp for WP", array('back_link' => true));
+		}
 
-		// flawed, add retry option.
 		return $result;
 	}
 

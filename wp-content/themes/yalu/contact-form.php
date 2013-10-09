@@ -48,11 +48,11 @@ $mail = mail(WEBMASTER_EMAIL, EMAIL_SUBJECT, $message,
 
 if($mail)
 {
-echo '<span class="confirm_icon">'.__("Confirm", 'sr_yalu_theme').'</span><span class="confirm_message"><strong>'.__("Your message has been sent. Thank You.", 'sr_yalu_theme').'</strong></span>';
+echo '<span class="confirm_icon">'.__("Confirm-", 'sr_yalu_theme').'</span><span class="confirm_message"><strong>'.__("Your message has been sent. Thank you, we will be touch.", 'sr_yalu_theme').'</strong></span>';
 }
 else
 {
-echo '<span class="error_icon">'.__("Error", 'sr_yalu_theme').'</span><span class="error_message"><strong>'.__("Your message has not been sent", 'sr_yalu_theme').'!</strong></span>';
+echo '<span class="error_icon">'.__("Error-", 'sr_yalu_theme').'</span><span class="error_message"><strong>'.__("Your message has not been sent", 'sr_yalu_theme').'!</strong></span>';
 }
 
 ?>
