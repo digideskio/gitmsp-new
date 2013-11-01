@@ -21,10 +21,11 @@ if (!$sidebar) { $sidebar = 'right'; }
   <div id="blog-single" class="clearfix">    
     <?php get_template_part( 'includes/singlepost', 'blog'); ?>
   </div>
-</div>  
+</div>
 
 <aside id="sidebar" class="<?php if ($sidebar == 'right') { ?>right-float<?php } else { ?>left-float<?php } ?>">
-  <?php get_sidebar(); ?>
-</aside>           
+  <a href="<?php bloginfo('siteurl');?>/job-board">Back to Job Board</a>
+</aside>  
+            
+<?php get_footer(); ?>      
   
-<?php get_footer(); ?>
