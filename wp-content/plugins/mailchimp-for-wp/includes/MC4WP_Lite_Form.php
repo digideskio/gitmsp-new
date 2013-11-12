@@ -9,10 +9,11 @@ class MC4WP_Lite_Form {
 	public function __construct() {
 		$opts = $this->get_options();
 
-		if ( $opts['css'] ) {
-			add_action( 'wp_enqueue_scripts', array( $this, 'load_stylesheet' ) );
+		if($opts['css']) {
+			add_filter('mc4wp_stylesheets', array($this, 'add_stylesheets'));
 		}
 
+		add_shortcode( 'mc4wp_form', array( $this, 'output_form' ) );
 		add_shortcode( 'mc4wp-form', array( $this, 'output_form' ) );
 
 		// enable shortcodes in text widgets
@@ -22,6 +23,7 @@ class MC4WP_Lite_Form {
 		if ( isset( $_POST['mc4wp_form_submit'] ) ) {
 			$this->ensure_backwards_compatibility();
 			add_action( 'init', array( $this, 'submit' ) );
+			add_action( 'wp_footer', array( $this, 'print_scroll_js' ), 99);
 		}
 
 
@@ -32,23 +34,32 @@ class MC4WP_Lite_Form {
 		return $options['form'];
 	}
 
-	public function load_stylesheet() {
-		wp_enqueue_style( 'mc4wp-form-reset', plugins_url( 'mailchimp-for-wp/assets/css/form.css' ) );
+	public function add_stylesheets($stylesheets) {
+		$opts = $this->get_options();
+
+		$stylesheets['form'] = 1;
+
+		// theme?
+		if($opts['css'] != 1 && $opts['css'] != 'default') {
+			$stylesheets['form-theme'] = $opts['css'];
+		}
+
+		return $stylesheets;
 	}
 
 	public function output_form( $atts, $content = null ) {
 		$opts = $this->get_options();
 
-		if(!function_exists('mc4wp_replace_variables')) {
+		if ( !function_exists( 'mc4wp_replace_variables' ) ) {
 			include_once MC4WP_LITE_PLUGIN_DIR . 'includes/template-functions.php';
 		}
-		
+
 		// add some useful css classes
 		$css_classes = ' ';
 		if ( $this->error ) $css_classes .= 'mc4wp-form-error ';
 		if ( $this->success ) $css_classes .= 'mc4wp-form-success ';
 
-		$content = "\n<!-- Form by MailChimp for WP plugin v". MC4WP_LITE_VERSION ." - http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/ -->\n";
+		$content = "\n<!-- Form by MailChimp for WordPress plugin v". MC4WP_LITE_VERSION ." - http://dannyvankooten.com/mailchimp-for-wordpress/ -->\n";
 		$content .= '<form method="post" action="#mc4wp-form-'. $this->form_instance_number .'" id="mc4wp-form-'.$this->form_instance_number.'" class="mc4wp-form form'.$css_classes.'">';
 
 		// maybe hide the form
@@ -58,6 +69,7 @@ class MC4WP_Lite_Form {
 			// replace special values
 			$form_markup = str_replace( array( '%N%', '{n}' ), $this->form_instance_number, $form_markup );
 			$form_markup = mc4wp_replace_variables( $form_markup, array_values( $opts['lists'] ) );
+			$form_markup = apply_filters('mc4wp_form_content', $form_markup);
 			$content .= $form_markup;
 
 			// hidden fields
@@ -68,6 +80,7 @@ class MC4WP_Lite_Form {
 		}
 
 		if ( $this->form_instance_number == $this->submitted_form_instance ) {
+
 			if ( $this->success ) {
 				$content .= '<div class="mc4wp-alert mc4wp-success">' . __( $opts['text_success'] ) . '</div>';
 			} elseif ( $this->error ) {
@@ -156,8 +169,8 @@ class MC4WP_Lite_Form {
 						$grouping['name'] = $grouping_id_or_name;
 					}
 
-					if ( is_array( $groups ) ) {
-						$grouping['groups'] = implode( ',', $groups );
+					if ( !is_array( $groups ) ) {
+						$grouping['groups'] = explode( ',', $groups );
 					} else {
 						$grouping['groups'] = $groups;
 					}
@@ -264,8 +277,16 @@ class MC4WP_Lite_Form {
 			}
 		}
 
+		$merge_vars = apply_filters('mc4wp_merge_vars', $merge_vars);
+		$email_type = apply_filters('mc4wp_email_type', 'html');
+
 		foreach ( $lists as $list ) {
-			$result = $api->subscribe( $list, $email, $merge_vars, 'html', $opts['double_optin'] );
+			$result = $api->subscribe( $list, $email, $merge_vars, $email_type, $opts['double_optin'] );
+
+			if($result === true) {
+				$from_url = (isset($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '';
+				do_action('mc4wp_subscribe_form', $email, $list, 0, $merge_vars, $from_url); 
+			}
 		}
 
 		if ( $result === true ) {
@@ -278,6 +299,31 @@ class MC4WP_Lite_Form {
 		// flawed
 		// this will only return the result of the last list a subscribe attempt has been sent to
 		return $result;
+	}
+
+	public function print_scroll_js() {
+		?><script type="text/javascript"> (function(){if(undefined==window.jQuery){return}var e=window.jQuery,t=window.location.hash;if(t.substring(1,12)=="mc4wp-form-"){var n=e(t);if(!n.length){return false}var r=n.offset().top,i=(e(window).innerHeight()-n.outerHeight())/2;r=i>0?r-i:r;if(r>0){var s=500+r;e("html,body").animate({scrollTop:r},s)}return false}})()</script><?php 
+		/*
+			(function() {
+				if ( undefined == window.jQuery ) { return; }
+				var $ = window.jQuery, hash = window.location.hash;
+			    if (hash.substring(1, 12) == 'mc4wp-form-') {
+				    var $target = $(hash);
+				    if(!$target.length) { return false; }
+
+				    var yOffset = $target.offset().top, substract = (($(window).innerHeight() - $target.outerHeight()) / 2);
+					yOffset = (substract > 0) ? yOffset - substract : yOffset;
+
+					if(yOffset > 0) {
+						var animationTime = (500 + yOffset);
+						$('html,body').animate({ scrollTop: yOffset }, animationTime);
+					}
+
+				    return false;
+			   	}
+			})(); */ ?>
+		
+		<?php
 	}
 
 }

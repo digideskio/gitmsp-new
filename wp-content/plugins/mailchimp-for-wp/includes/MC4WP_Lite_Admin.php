@@ -16,11 +16,18 @@ class MC4WP_Lite_Admin
 		register_deactivation_hook( 'mailchimp-for-wp-pro/mailchimp-for-wp-pro.php', array($this, 'delete_transients') );
 
 		add_filter("plugin_action_links_mailchimp-for-wp/mailchimp-for-wp.php", array($this, 'add_settings_link'));
-	
+		
 		// did the user click on upgrade to pro link?
-		if(isset($_GET['page']) && $_GET['page'] == 'mc4wp-lite-upgrade' && !headers_sent()) {
-			header("Location: http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/");
-			exit;
+		if(isset($_GET['page'])) {
+
+			if($_GET['page'] == 'mc4wp-lite-upgrade' && !headers_sent()) {
+				header("Location: http://dannyvankooten.com/mailchimp-for-wordpress/?utm_source=lite-plugin&utm_medium=link&utm_campaign=menu-upgrade-link");
+				exit;
+			}
+
+			if($_GET['page'] == 'mc4wp-lite-form-settings') {
+				add_filter('quicktags_settings', array($this, 'set_quicktags_buttons'), 10, 2 );
+			}
 		}
 	}
 
@@ -30,10 +37,19 @@ class MC4WP_Lite_Admin
 		delete_transient('mc4wp_mailchimp_lists_fallback');
 	}
 
+	public function set_quicktags_buttons($settings, $editor_id)
+	{
+		if($editor_id != 'mc4wpformmarkup') { return $settings; }
+
+		// strong,em,link,block,del,ins,img,ul,ol,li,code,more,close
+		$settings['buttons'] = 'strong,em,link,block,img,ul,ol,li,close';
+		return $settings;
+	}
+
 	public function add_settings_link($links)
 	{
 		 $settings_link = '<a href="admin.php?page=mc4wp-lite">Settings</a>';
-		 $upgrade_link = '<a href="http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/">Upgrade to Pro</a>';
+		 $upgrade_link = '<a href="http://dannyvankooten.com/mailchimp-for-wordpress/">Upgrade to Pro</a>';
          array_unshift($links, $upgrade_link, $settings_link);
          return $links;
 	}
@@ -52,7 +68,7 @@ class MC4WP_Lite_Admin
 
 	public function build_menu()
 	{
-		add_menu_page('MailChimp for WP Lite', 'MailChimp for WP Lite', 'manage_options', 'mc4wp-lite', array($this, 'show_api_settings'), plugins_url('mailchimp-for-wp/assets/img/menu-icon.png'));
+		add_menu_page('MailChimp for WP Lite', 'MailChimp for WP', 'manage_options', 'mc4wp-lite', array($this, 'show_api_settings'), plugins_url('mailchimp-for-wp/assets/img/menu-icon.png'));
 		add_submenu_page('mc4wp-lite', 'API Settings - MailChimp for WP Lite', 'MailChimp Settings', 'manage_options', 'mc4wp-lite', array($this, 'show_api_settings'));
 		add_submenu_page('mc4wp-lite', 'Checkbox Settings - MailChimp for WP Lite', 'Checkboxes', 'manage_options', 'mc4wp-lite-checkbox-settings', array($this, 'show_checkbox_settings'));
 		add_submenu_page('mc4wp-lite', 'Form Settings - MailChimp for WP Lite', 'Forms', 'manage_options', 'mc4wp-lite-form-settings', array($this, 'show_form_settings'));
@@ -83,12 +99,15 @@ class MC4WP_Lite_Admin
 		if(class_exists("BuddyPress")) $checkbox_plugins['bp_form'] = "BuddyPress registration";
 		if(class_exists('bbPress')) $checkbox_plugins['bbpress_forms'] = "bbPress";
 
+		if ( class_exists( 'Easy_Digital_Downloads' ) ) $checkbox_plugins['_edd_checkout'] = "(PRO ONLY) Easy Digital Downloads checkout";
+		if ( class_exists( 'Woocommerce' ) ) $checkbox_plugins['_woocommerce_checkout'] = "(PRO ONLY) WooCommerce checkout";
+
 		return $checkbox_plugins;
 	}
 
 	public function redirect_to_pro()
 	{
-		?><script>window.location.replace('http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/'); </script><?php
+		?><script>window.location.replace('http://dannyvankooten.com/mailchimp-for-wordpress/'); </script><?php
 	}
 
 	public function show_api_settings()
@@ -223,12 +242,18 @@ class MC4WP_Lite_Admin
 	*/ 
 	public function strip_unnecessary_merge_vars_properties($merge_var)
 	{
-		return (object) array(
+		$array = array(
 			'name' => $merge_var->name,
 			'field_type' => $merge_var->field_type,
 			'req' => $merge_var->req,
 			'tag' => $merge_var->tag
 		);
+
+		if ( isset( $merge_var->choices ) ) {
+			$array["choices"] = $merge_var->choices;
+		}
+
+		return (object) $array;
 
 	}
 

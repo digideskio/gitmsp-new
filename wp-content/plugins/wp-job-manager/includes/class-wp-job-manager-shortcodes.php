@@ -112,6 +112,10 @@ class WP_Job_Manager_Shortcodes {
 			return;
 		}
 
+		extract( shortcode_atts( array(
+			'posts_per_page' => '25',
+		), $atts ) );
+
 		wp_enqueue_script( 'wp-job-manager-job-dashboard' );
 
 		// If doing an action, show conditional content if needed....
@@ -127,23 +131,24 @@ class WP_Job_Manager_Shortcodes {
 		}
 
 		// ....If not show the job dashboard
-		$args = apply_filters( 'job_manager_get_dashboard_jobs_args', array(
+		$args     = apply_filters( 'job_manager_get_dashboard_jobs_args', array(
 			'post_type'           => 'job_listing',
 			'post_status'         => array( 'publish', 'expired', 'pending' ),
 			'ignore_sticky_posts' => 1,
-			'posts_per_page'      => -1,
+			'posts_per_page'      => $posts_per_page,
+			'offset'              => ( max( 1, get_query_var('paged') ) - 1 ) * $posts_per_page,
 			'orderby'             => 'date',
 			'order'               => 'desc',
 			'author'              => get_current_user_id()
 		) );
 
-		$jobs = get_posts( $args );
+		$jobs = new WP_Query;
 
 		ob_start();
 
 		echo $this->job_dashboard_message;
 
-		get_job_manager_template( 'job-dashboard.php', array( 'jobs' => $jobs ) );
+		get_job_manager_template( 'job-dashboard.php', array( 'jobs' => $jobs->query( $args ), 'max_num_pages' => $jobs->max_num_pages ) );
 
 		return ob_get_clean();
 	}
@@ -220,12 +225,20 @@ class WP_Job_Manager_Shortcodes {
 
 				</ul>
 
+				<?php if ( $jobs->found_posts > $per_page ) : ?>
+
+					<?php wp_enqueue_script( 'wp-job-manager-ajax-filters' ); ?>
+
+					<a class="load_more_jobs" href="#" style="display:none;"><strong><?php _e( 'Load more job listings', 'job_manager' ); ?></strong></a>
+
+				<?php endif; ?>
+
 			<?php endif;
 
 			wp_reset_postdata();
 		}
 
-		return '<div class="job_listings">' . ob_get_clean() . '</div>';
+		return '<div class="job_listings" data-show_filters="' . ( $show_filters && $show_filters !== 'false' ? 1 : 0 ) . '" data-per_page="' . esc_attr( $per_page ) . '" data-orderby="' . esc_attr( $orderby ) . '" data-order="' . esc_attr( $order ) . '" data-categories="' . esc_attr( implode( ',', $categories ) ) . '">' . ob_get_clean() . '</div>';
 	}
 
 	/**

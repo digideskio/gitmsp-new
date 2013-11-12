@@ -40,24 +40,33 @@ class MC4WP_Lite {
 		}
 		return self::$admin;
 	}
+
 	public function __construct() {
 		self::$instance = $this;
 
 		$this->backwards_compatibility();
 		$opts = $this->get_options();
 
-		// setup the code
+		// checkbox
 		self::checkbox();
+
+		// form
 		self::form();
 
+		// widget
+		add_action( 'widgets_init', array($this, 'register_widget') );
+
 		if ( !defined( 'DOING_AJAX' ) || !DOING_AJAX ) {
-			// non-ajax only
 			if ( is_admin() ) {
-				// backend non-ajax only
+				// backend only
 				self::admin();
 			} else {
-				// frontend non-ajax only
+				// frontend only
 				include_once MC4WP_LITE_PLUGIN_DIR . 'includes/template-functions.php';
+
+				// load css
+				add_action( 'wp_enqueue_scripts', array($this, 'load_stylesheets'), 90);
+				add_action( 'login_enqueue_scripts',  array($this, 'load_stylesheets') );
 			}
 		}
 	}
@@ -81,7 +90,7 @@ class MC4WP_Lite {
 				'double_optin' => 1
 			),
 			'form' => array(
-				'css' => 1,
+				'css' => 'default',
 				'markup' => "<p>\n\t<label for=\"mc4wp_email\">Email address: </label>\n\t<input type=\"email\" id=\"mc4wp_email\" name=\"EMAIL\" required placeholder=\"Your email address\" />\n</p>\n\n<p>\n\t<input type=\"submit\" value=\"Sign up\" />\n</p>",
 				'text_success' => 'Thank you, your sign-up request was successful! Please check your e-mail inbox.',
 				'text_error' => 'Oops. Something went wrong. Please try again later.',
@@ -121,45 +130,90 @@ class MC4WP_Lite {
 	private function backwards_compatibility() {
 		$options = get_option( 'mc4wp_lite' );
 
-		if ( !isset( $options['mailchimp_api_key'] ) ) { return; }
+		// transfer widget to new id?
+		if(get_option('mc4wp_transfered_old_widgets', false) == false) {
+			$sidebars_widgets = get_option('sidebars_widgets');
+			
+			if($sidebars_widgets && is_array($sidebars_widgets)) {
+				foreach($sidebars_widgets as $key => $widgets) 
+				{
+					if(!is_array($widgets)) { continue; }
+					foreach($widgets as $subkey => $widget_name) {
 
-		// transfer old options to new option system
-		$new_options = array(
-			'general' => array(),
-			'checkbox' => array(),
-			'form' => array()
-		);
+						if(substr($widget_name, 0, 17) == 'mc4wp_lite_widget') {
 
-		$new_options['general']['api_key'] = $options['mailchimp_api_key'];
-
-		foreach ( $options as $key => $value ) {
-			$_pos = strpos( $key, '_' );
-
-			$first_key = substr( $key, 0, $_pos );
-			$second_key = substr( $key, $_pos + 1 );
-
-			if ( isset( $new_options[$first_key] ) ) {
-
-				// change option name
-				if ( $second_key == 'show_at_bp_form' ) {
-					$second_key = 'show_at_buddypress_form';
+							$new_widget_name = str_replace('mc4wp_lite_widget', 'mc4wp_widget', $widget_name);
+							// active widget found, just change name?
+							$sidebars_widgets[$key][$subkey] = $new_widget_name;
+							update_option('sidebars_widgets', $sidebars_widgets);
+							update_option('widget_mc4wp_widget', get_option('widget_mc4wp_lite_widget') );
+							break;
+						}
+					}
 				}
-
-				// change option name
-				if ( $second_key == 'show_at_ms_form' ) {
-					$second_key = 'show_at_multisite_form';
-				}
-
-				// set value into new option name
-				$new_options[$first_key][$second_key] = $value;
 			}
 
+			update_option('mc4wp_transfered_old_widgets', true);
 		}
+		
 
-		update_option( 'mc4wp_lite', $new_options['general'] );
-		update_option( 'mc4wp_lite_checkbox', $new_options['checkbox'] );
-		update_option( 'mc4wp_lite_form', $new_options['form'] );
+		
+		
+		// transfer old options to new options format
+		if (isset( $options['mailchimp_api_key'] )) {  
 
+			$new_options = array(
+				'general' => array(),
+				'checkbox' => array(),
+				'form' => array()
+			);
+
+			$new_options['general']['api_key'] = $options['mailchimp_api_key'];
+
+			foreach ( $options as $key => $value ) {
+				$_pos = strpos( $key, '_' );
+
+				$first_key = substr( $key, 0, $_pos );
+				$second_key = substr( $key, $_pos + 1 );
+
+				if ( isset( $new_options[$first_key] ) ) {
+
+					// change option name
+					if ( $second_key == 'show_at_bp_form' ) {
+						$second_key = 'show_at_buddypress_form';
+					}
+
+					// change option name
+					if ( $second_key == 'show_at_ms_form' ) {
+						$second_key = 'show_at_multisite_form';
+					}
+
+					// set value into new option name
+					$new_options[$first_key][$second_key] = $value;
+				}
+
+			}
+
+			update_option( 'mc4wp_lite', $new_options['general'] );
+			update_option( 'mc4wp_lite_checkbox', $new_options['checkbox'] );
+			update_option( 'mc4wp_lite_form', $new_options['form'] );
+		} // end transfer options
+	}
+
+	public function register_widget()
+	{
+		include_once MC4WP_LITE_PLUGIN_DIR . 'includes/MC4WP_Lite_Widget.php';
+		register_widget( 'MC4WP_Lite_Widget' );
+	}
+
+	public function load_stylesheets() 
+	{
+		$stylesheets = apply_filters('mc4wp_stylesheets', array());
+
+		if(!empty($stylesheets)) {
+			$stylesheet_url = add_query_arg($stylesheets, plugins_url('mailchimp-for-wp/assets/css/css.php'));
+			wp_enqueue_style( 'mailchimp-for-wp', $stylesheet_url, array(), MC4WP_LITE_VERSION);
+		}
 	}
 
 }

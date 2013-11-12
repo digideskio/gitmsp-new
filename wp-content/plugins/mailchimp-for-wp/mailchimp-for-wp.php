@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: MailChimp for WP Lite
-Plugin URI: http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/
-Description: Lite version of MailChimp for WordPress. Add various sign-up methods to your WordPress website. Show a sign-up form in your posts, pages or text widgets. Add a sign-up checkbox to various forms, like your comment form. <a href="http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/">Premium features include (multiple) AJAX powered forms, a form designer, an unlocked field wizard and much more.</a>
-Version: 1.2.5
+Plugin Name: MailChimp for WordPress Lite
+Plugin URI: http://dannyvankooten.com/mailchimp-for-wordpress/
+Description: Lite version of MailChimp for WordPress. Add various sign-up methods to your website. Show sign-up forms in your posts, pages or widgets. Add sign-up checkboxes to various forms, like your comment or contact forms. Premium features include multiple and better forms, easier styling, detailed statistics and much more: <a href="http://dannyvankooten.com/mailchimp-for-wordpress/">Upgrade now</a>
+Version: 1.4.2
 Author: Danny van Kooten
 Author URI: http://dannyvanKooten.com
 License: GPL v3
@@ -25,9 +25,18 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-define("MC4WP_LITE_VERSION", "1.2.5");
+defined( 'ABSPATH' ) OR exit;
+
+define("MC4WP_LITE_VERSION", "1.4.2");
 define("MC4WP_LITE_PLUGIN_DIR", plugin_dir_path(__FILE__));
 
-// frontend AND backend
-include_once MC4WP_LITE_PLUGIN_DIR . 'includes/MC4WP_Lite.php';
-new MC4WP_Lite();
+if(!function_exists('is_plugin_active')) {
+	include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
+}
+
+// Only load Lite plugin is Pro version is not active
+if(!is_plugin_active('mailchimp-for-wp-pro/mailchimp-for-wp-pro.php')) {
+	include_once MC4WP_LITE_PLUGIN_DIR . 'includes/MC4WP_Lite.php';
+	new MC4WP_Lite();
+} 
+

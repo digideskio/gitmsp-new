@@ -1,13 +1,13 @@
 <div id="mc4wp-<?php echo $tab; ?>" class="wrap mc4wp-settings">
 
-	<h2>Checkbox Settings</h2>
+	<h2>MailChimp for WordPress: Checkbox Settings</h2>
 
 	<div id="mc4wp-content">
 
 		<?php settings_errors(); ?>
 		<p>To use the MailChimp for WP sign-up checkboxes, select at least one list and one form to add the checkbox to.</p>
 
-		<h3>List settings</h3>
+		<h3 class="mc4wp-title">List settings</h3>
 		<form action="options.php" method="post">
 			<?php settings_fields( 'mc4wp_lite_checkbox_settings' ); ?>
 
@@ -34,7 +34,7 @@
 				</tr>
 			</table>
 
-		<h3>Checkbox settings</h3>
+		<h3 class="mc4wp-title">Checkbox settings</h3>
 		<table class="form-table">
 		<tr valign="top">
 			<th scope="row">Double opt-in?</th>
@@ -44,15 +44,23 @@
 		<tr valign="top">
 			<th scope="row">Add the checkbox to these forms</th>
 			<td colspan="2">
-				<?php foreach($this->get_checkbox_compatible_plugins() as $code => $name) { ?>
-					<label><input name="mc4wp_lite_checkbox[show_at_<?php echo $code; ?>]" value="1" type="checkbox" <?php checked($opts['show_at_'.$code], 1); ?>> <?php echo $name; ?></label> &nbsp; 
-				<?php } ?>
+				<?php foreach($this->get_checkbox_compatible_plugins() as $code => $name) {
+
+					if($code[0] != '_') {
+						?><label><input name="mc4wp_lite_checkbox[show_at_<?php echo $code; ?>]" value="1" type="checkbox" <?php checked($opts['show_at_'.$code], 1); ?>> <?php echo $name; ?></label> &nbsp; <?php
+					} else {
+						?><label class="pro-feature"><input type="checkbox" disabled> <?php echo $name; ?></label> &nbsp; <?php
+					}
+				} ?>
 				<label><input name="mc4wp_lite_checkbox[show_at_other_forms]" value="1" type="checkbox" <?php if($opts['show_at_other_forms']) echo 'checked '; ?>> Other forms (manual)</label> &nbsp; 
 			</td>
 		</tr>
 		<tr valign="top">
 			<th scope="row"><label for="mc4wp_checkbox_label">Checkbox label text</label></th>
-			<td colspan="2"><input type="text"  class="widefat" id="mc4wp_checkbox_label" name="mc4wp_lite_checkbox[label]" value="<?php echo esc_attr($opts['label']); ?>" /></td>
+			<td colspan="2">
+				<input type="text"  class="widefat" id="mc4wp_checkbox_label" name="mc4wp_lite_checkbox[label]" value="<?php echo esc_attr($opts['label']); ?>" required />
+				<p class="help">HTML tags like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> are allowed in the label text.</p>
+			</td>
 		</tr>
 		<tr valign="top">
 			<th scope="row">Pre-check the checkbox?</th>
@@ -76,13 +84,6 @@
 </div>
 <div id="mc4wp-sidebar">
 	<?php include 'parts/admin-upgrade-to-pro.php'; ?>
-
-	<div class="mc4wp-box">
-		<h3>Styling the Sign-Up Checkbox</h3>
-		<p>Custom or additional styling can be done by applying CSS rules to <b>#mc4wp-checkbox</b> or its child elements.</p>
-		<p>You should add the CSS rules to your theme stylesheet using the <a href="<?php echo admin_url('theme-editor.php?file=style.css'); ?>">Theme Editor</a> or by editing <em><?php echo get_stylesheet_directory(); ?>/style.css</em> over FTP.</p>
-	</div>
-
 	<?php include 'parts/admin-need-support.php'; ?>
 </div>
 
