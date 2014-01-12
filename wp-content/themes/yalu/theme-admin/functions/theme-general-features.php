@@ -266,7 +266,6 @@ if( !function_exists( 'sr_sharebutton' ) ) {
 		<ul class="sharelinks clearfix">
 			<li><a href="" onclick="window.open('http://www.facebook.com/sharer/sharer.php?s=100&amp;p[title]=<?php echo $og_title ?>&amp;p[url]=<?php the_permalink(); ?>&amp;p[summary]=<?php echo urlencode($og_desc); ?>&amp;p[images][0]=<?php echo $og_img; ?>','','width=900, height=500, toolbar=no, status=no'); return(false);" title="Facebook Share" class="fb_share"><span><?php _e('Like it', 'sr_yalu_theme') ?></span></a></li>
 			<li><a href="" onclick="window.open('https://twitter.com/intent/tweet?text=Tweet%20this&amp;url=<?php the_permalink(); ?>','','width=650, height=350, toolbar=no, status=no'); return(false);" title="Twitter Share" class="tw_share"><span><?php _e('Tweet it', 'sr_yalu_theme') ?></span></a></li>
-			<li><a href="" onclick="window.open('https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=<?php the_permalink(); ?>&amp;image<?php echo $og_img; ?>','','width=900, height=500, toolbar=no, status=no'); return(false);" title="Google Plus Share" class="g_share"><span><?php _e('Share it', 'sr_yalu_theme') ?></span></a></li>
 			<li><a href="" onclick="window.open('http://pinterest.com/pin/create/bookmarklet/?media=<?php echo $og_img; ?>&amp;url=<?php the_permalink(); ?>','','width=650, height=350, toolbar=no, status=no'); return(false);" title="Pin it" class="p_share"><span><?php _e('Pin it', 'sr_yalu_theme') ?></span></a></li>
 		</ul>
 		<?php

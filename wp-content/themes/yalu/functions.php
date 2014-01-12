@@ -247,6 +247,103 @@ function sr_plugin_activation() {
 
 /*-----------------------------------------------------------------------------------*/
 
+// PROFESSIONAL SPOTLIGHT
+
+// Register Custom Post Type
+function custom_post_type() {
+
+	$labels = array(
+		'name'                => 'Spotlights',
+		'singular_name'       => 'Spotlight',
+		'menu_name'           => 'Spotlight',
+		'parent_item_colon'   => 'Parent Spotlight:',
+		'all_items'           => 'All Spotlights',
+		'view_item'           => 'View Spotlight',
+		'add_new_item'        => 'Add New Spotlight',
+		'add_new'             => 'New Spolight',
+		'edit_item'           => 'Edit Spotlight',
+		'update_item'         => 'Update Spotlight',
+		'search_items'        => 'Search spotlights',
+		'not_found'           => 'No spotlights found',
+		'not_found_in_trash'  => 'No spotlights found in Trash',
+	);
+	$rewrite = array(
+		'slug'                => 'spotlights',
+		'with_front'          => true,
+		'pages'               => true,
+		'feeds'               => true,
+	);
+	$args = array(
+		'label'               => 'spotlight',
+		'description'         => 'Professional spotlights',
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'          => array( 'title' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'           => '',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'rewrite'             => $rewrite,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'spotlight', $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_post_type', 0 );
+
+// TITLE 
+
+// Register Custom Taxonomy
+function custom_taxonomy()  {
+
+	$labels = array(
+		'name'                       => 'Titles',
+		'singular_name'              => 'Title',
+		'menu_name'                  => 'Title',
+		'all_items'                  => 'All Titles',
+		'parent_item'                => 'Parent Title',
+		'parent_item_colon'          => 'Parent Title:',
+		'new_item_name'              => 'New Title Name',
+		'add_new_item'               => 'Add New Title',
+		'edit_item'                  => 'Edit Title',
+		'update_item'                => 'Update Title',
+		'separate_items_with_commas' => 'Separate titles with commas',
+		'search_items'               => 'Search titles',
+		'add_or_remove_items'        => 'Add or remove titles',
+		'choose_from_most_used'      => 'Choose from the most used titles',
+	);
+	$rewrite = array(
+		'slug'                       => 'title',
+		'with_front'                 => true,
+		'hierarchical'               => true,
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite'                    => $rewrite,
+	);
+	register_taxonomy( 'title', 'custom_post_type', $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_taxonomy', 0 );
+
 
 
 ?>
